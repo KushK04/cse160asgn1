@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Asg 1</title>
+</head>
+ 
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use the browser supporting "canvas".
+  </canvas>
+
+
+
+  <img src = "refernce.PNG" style="padding-left: 30px" alt="Hylian Shield" width="400" height="400">
+
+  <br><br>
+
+  <input type="button" id="clearButton" value="Clear">
+
+  <input type="button" id="pictureButton" value="Draw Image">
+
+  <br><br>
+
+  Drawing Mode:
+
+  <br><br>
+
+  <input type="button" id="pointButton" value="Squares">
+  <input type="button" id="triangleButton" value="Triangles">
+  <input type="button" id="circleButton" value="Circles">
+  <input type="button" id="starButton" value="Stars">
+
+
+  <br><br>
+
+  Red <input type = "range" min="0" max="100" value="100" class = "slider" id = "redSlide">
+
+  <br><br>
+
+  Green <input type = "range" min="0" max="100" value="100" class = "slider" id = "blueSlide">
+
+  <br><br>
+ 
+  Blue <input type = "range" min="0" max="100" value ="100" class = "slider" id = "greenSlide">
+
+  <br><br>  
+
+  Shape Size <input type = "range" min="5" max="40" value ="5" class = "slider" id = "sizeSlide">
+
+  Alpha <input type = "range" min="0" max="100" value ="100" class = "slider" id = "alphaSlide">
+
+  <br><br>   
+
+  (Circles) Segment Count <input type = "range" min="10" max="50" value ="10" class = "slider" id = "segSlide">
+
+  <br><br>   
+ 
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="asg1.js"></script>
+  <script src="Point.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Star.js"></script>
+
+</body>
+</html> 
